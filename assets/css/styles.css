@@ -56,11 +56,46 @@ video {
 
 i {
     color: #4B4737;
+    transition: transform 900ms ease-in-out;
+    -webkit-transition: 900ms ease-in-out;
+    -moz-transition: 900ms ease-in-out;
+    -ms-transition: 900ms ease-in-out;
+    -o-transition: 900ms ease-in-out;
+    opacity: 0.5;
 }
 
 i:hover {
-    color: #4B4737;
+    color: #298B1C;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    opacity: 1;
+}
 
+.gallery-img {
+    transition: transform 2000ms ease-in-out;
+    -webkit-transition: 2000ms ease-in-out;
+    -moz-transition: 2000ms ease-in-out;
+    -ms-transition: 2000ms ease-in-out;
+    -o-transition: 2000ms ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.modal {
+    background-color: transparent !important;
+}
+
+.modal-content {
+    background-color: transparent;
 }
 
 hr {
@@ -87,12 +122,17 @@ small {
     color: #4B4737
 }
 
-.breadcrumb>.active {
-    color: #8ed41d
+.breadcrumb a:hover {
+    color: #298B1C;
+    transition: 500ms ease-in-out;
 }
 
 .card {
     background-color: #FFF9E6
+}
+
+#projectsAndProductsSlideshow {
+    background-color: #FFF9E6;
 }
 
 #homeContent {

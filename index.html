@@ -80,9 +80,9 @@
     
     <div class="container-fluid">
         <!-- Nav content starts here -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF9E6;">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFF9E6;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#homeContent">
+                <a class="navbar-brand" href="#projectsAndProductsSlideshow">
                     Brand Logo
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#homeContent">Home</a>
+                            <a class="nav-link" aria-current="page" href="#projectsAndProductsSlideshow">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutUsContent">About</a>
@@ -113,7 +113,36 @@
             </div>
         </nav>
         <!-- Nav content ends here -->
-        
+        <!-- Products and Projects slideshow Content starts here -->
+            <aside id="projectsAndProductsSlideshow">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="my-3 pb-3">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-12">
+                                    <div id="projectsAndProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        <!-- Products and Projects slideshow content ends here -->
         <div>
         <!-- Header content starts here -->
         <header id="homeContent">
@@ -193,13 +222,13 @@
                 <!-- Services and Location content starts here -->
                 <article id="servicesAndLocationInfo" class="pb-3">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
                                 <h4 class="h1 text-center py-3">Services</h4>
                                 <div class="card border-0 mb-3" style="background-color: #BAFFAD;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                        <img class="card-img-top" src="assets/images/shambani-image-placeholder.svg" alt="...">
+                                        <img class="card-img-top ps-2" src="assets/images/shambani-image-placeholder.svg" alt="...">
                                         </div>
                                         <div class="col-md-8">
                                         <div class="card-body">
@@ -211,19 +240,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
                                 <h4 class="h1 text-center py-3">Location</h4>
                                 <div class="card border-0 mb-3" style="background-color: #BAFFAD;">
                                     <div class="row g-0">
-                                        <div class="col-md-4">
-                                        <img class="card-img-top" src="assets/images/shambani-image-placeholder.svg" alt="...">
-                                        </div>
                                         <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Location</h5>
                                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        <img class="card-img-top pe-2" src="assets/images/shambani-image-placeholder.svg" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -318,49 +347,391 @@
                             <div class="rounded-3 mb-3">
                                 <h3 class="h1 text-center py-3">Our Projects and Activities Gallery</h3>
                                 <div class="card-group">
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image1Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image2Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image3Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image4Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
-                                    </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
-                                    </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image5Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image5Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-group">
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image6Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image7Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image7Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image8Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image8Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image9Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image9Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                </div>
+                                <div class="card-group">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image10Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image10Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image11Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image11Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card border-0">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image12Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image12Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-group">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image13Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image13Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image14Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image14Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image15Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image15Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image16Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image16Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-group">
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image17Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image17Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image18Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image18Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image19Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image19Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image20Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image20Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <a data-bs-toggle="modal" data-bs-target="#image21Modal">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="image21Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl">
+                                                <div class="modal-content border-0">
+                                                <div class="modal-header border-0">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
+                                                </div>
+                                                <div class="modal-body border-0">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -542,7 +913,7 @@
             <div id="footerNavigation" class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#projectsAndProductsSlideshow">Home</a></li>
                         <li class="breadcrumb-item"><a href="#aboutUsContent">About</a></li>
                         <li class="breadcrumb-item"><a href="#showReelContent">Showreels</a></li>
                         <li class="breadcrumb-item"><a href="#ourTeamMembersContent">Team</a></li>
