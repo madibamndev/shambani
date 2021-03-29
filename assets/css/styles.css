@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #FFF9E6;
+    font-family: Jost, sans-serif;
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px)/ (2500 - 300)));
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #4B4737;
+    font-family: 'Port Lligat Slab', serif
+}
+
+p {
+    color: #302E25;
+    font-family: jost, sans-serif;
+    letter-spacing: .0625em;
+    line-height: 1.6
+}
+
+a {
+    color: #213302;
+    text-decoration: none
+}
+
+a:hover {
+    color: #BE3A34;
+}
+
+legend {
+    color: #4B4737
+}
+
+figcaption {
+    color: #4B4737 !important
+}
+
+cite {
+    color: #4B4737
+}
+
+video {
+    max-width: 100%;
+    height: auto
+}
+
+i {
+    color: #4B4737;
+}
+
+i:hover {
+    color: #4B4737;
+
+}
+
+hr {
+    border-bottom: 3px solid #4B4737
+}
+
+strong {
+    color: #4B4737;
+    font-family: Jost, sans-serif;
+    line-height: 1.6
+}
+
+em {
+    color: #4B4737;
+    line-height: 1.6
+}
+
+small {
+    color: #4B4737;
+    font-family: Jost, sans-serif
+}
+
+.breadcrumb-item a {
+    color: #4B4737
+}
+
+.breadcrumb>.active {
+    color: #8ed41d
+}
+
+.card {
+    background-color: #FFF9E6
+}
+
+#homeContent {
+    background-color: #BAFFAD;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ourCoreValues {
+    background-color: #BAFFAD;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#aboutUsContent {
+    background-color: #FFF9E6;
+}
+
+#servicesAndLocationInfo {
+    background-color: #BAFFAD;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#showReelContent {
+    background-color: #FFF9E6;
+}
+
+#chartNumbers {
+    background-color: #BAFFAD;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#ourTeamMembersContent {
+    background-color: #FFF9E6;
+}
+
+#ourProjectsAndActivitiesGalleryContent {
+    background-color: #FFF9E6;
+}
+
+#testimoniesSlideshow {
+    background-color: #BAFFAD;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ourVision {
+    background-color: #BAFFAD;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#ourServices {
+    background-color: #FFF9E6;
+}
+
+#contactUsFormContent {
+    background-color: #BAFFAD;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#footerContent {
+    background-color: #FFF9E6;
+}
+
+#footerNavigation {
+    background-color: #FFF9E6;
+}
+
+#copyrightContent {
+    background-color: #FFF9E6;
+}

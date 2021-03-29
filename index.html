@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="Description" content="This is a website showcasing activities and projects undertaken by the kenya farmers based in Thika, Kiambu County.">
+    <!-- Googlegetmanager -->
+    <link rel="preconnect" href="www.googletagmanager.com">
+    <!-- Fontawesome Kit -->
+    <link rel="preconnect" href="kit.fontawesome.com">
+    <!-- Google analytics -->
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <!-- Import Google Fonts -->
+    <link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Pompiere&family=Port+Lligat+Slab&display=swap">
+    <!--Fonteawesome 4.7 CDN -->
+    <link rel="preconnect stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Title content -->
+    <title>Shambani</title>
+    <!-- styles.css -->
+    <link rel="preconnect stylesheet" href="assets/css/styles.css" type="text/css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Customer satisfaction Feedback -->
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Comment', 'Number of Customers'],
+          ['Excellent',     30],
+          ['Very Good',      15],
+          ['Good',  5],
+          ['Fair', 3],
+          ['Below Average',    2]
+        ]);
+
+        var options = {
+          title: 'Customer Rating',
+          is3D: true,
+          backgroundColor: '#BAFFAD',
+          stroke: 'black',
+          colors: ['#005C84', '#387BA5', '#5E9CC8', '#81BEEC', '#A5E2FF']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('customerRatingPiechart3d'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- Customer Satisfaction Chart javascript -->
+    <!-- Our team demographics -->
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Gender', 'Number of prople'],
+          ['Women',     11],
+          ['Men',      7]
+        ]);
+
+        var options = {
+          title: 'Staff Demographics',
+          is3D: true,
+          backgroundColor: '#BAFFAD',
+          colors: ['#005C84', '#387BA5', '#5E9CC8', '#81BEEC', '#A5E2FF']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('staffDemographicsPiechart3d'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Single page site content starts here -->
+    
+    <div class="container-fluid">
+        <!-- Nav content starts here -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFF9E6;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#homeContent">
+                    Brand Logo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#homeContent">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutUsContent">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#showReelContent">Showreel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourTeamMembersContent">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourProjectsAndActivitiesGalleryContent">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactUsFormContent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav content ends here -->
+        
+        <div>
+        <!-- Header content starts here -->
+        <header id="homeContent">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="py-3 position-relative">
+                        <h1 class="text-center">Welcome to Shambani</h1>
+                        <p class="text-center">A group of farmers passionate about <em>efficiency, high quality</em> in our quest towards Feeding the nation and the globe.</p>
+                        <div class="row">
+                            <div class="d-grid gap-2 d-md-block">
+                                <p class="text-center py-3">
+                                   <a class="btn btn-primary px-2" href="#aboutUsContent " role="button">About Us</a>
+                                    <a class="btn btn-primary px-2" href="#contactUsFormContent" role="button">Get in Touch</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header content ends here -->
+        </div>
+        <!-- Main content starts here -->
+        <main>
+            <div>
+                <!-- Our Core Values content starts here -->
+                <article id="ourCoreValues" class="pb-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="rounded-3 mb-3">
+                                <h2 class="h1 text-center py-3">Our Core Values</h2>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <p class="text-center"><i class="fa fa-5x fa-thumbs-o-up" aria-hidden="true"></i></p>
+                                        <p class="text-center">QUALITY</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <p class="text-center"><i class="fa fa-5x fa-handshake-o" aria-hidden="true"></i></p>
+                                        <p class="text-center">CUSTOMER SATISFACTION</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <p class="text-center"><i class="fa fa-5x fa-users" aria-hidden="true"></i></p>
+                                        <p class="text-center">MOTIVATED STAFF</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                        <p class="text-center"><i class="fa fa-5x fa-shield" aria-hidden="true"></i></p>
+                                        <p class="text-center">BIO-SECURITY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Our Core Values content ends here -->
+            </div>
+            <div>
+                <!-- About Us content starts here -->
+                <article id="aboutUsContent" class="pb-3">
+                    <div class="">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="rounded-3 mb-3">
+                                <h3 class="h1 text-center py-3">About Us</h3>
+                                <div class="text-center">
+                                    <p>Shambani is a digital space showcasing our portfolio composed of activities and projects that we are undertaking.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid accusamus, quod cumque deserunt numquam fugiat hic minima eos eaque exercitationem necessitatibus mollitia quasi! Officiis accusamus ab qui illo veniam.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid accusamus, quod cumque deserunt numquam fugiat hic minima eos eaque exercitationem necessitatibus mollitia quasi! Officiis accusamus ab qui illo veniam.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid accusamus, quod cumque deserunt numquam fugiat hic minima eos eaque exercitationem necessitatibus mollitia quasi! Officiis accusamus ab qui illo veniam.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid accusamus, quod cumque deserunt numquam fugiat hic minima eos eaque exercitationem necessitatibus mollitia quasi! Officiis accusamus ab qui illo veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- About Us content ends here -->
+            </div>
+            <div>
+                <!-- Services and Location content starts here -->
+                <article id="servicesAndLocationInfo" class="pb-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="rounded-3 mb-3">
+                                <h4 class="h1 text-center py-3">Services</h4>
+                                <div class="card border-0 mb-3" style="background-color: #BAFFAD;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                        <img class="card-img-top" src="assets/images/shambani-image-placeholder.svg" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Services</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="rounded-3 mb-3">
+                                <h4 class="h1 text-center py-3">Location</h4>
+                                <div class="card border-0 mb-3" style="background-color: #BAFFAD;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                        <img class="card-img-top" src="assets/images/shambani-image-placeholder.svg" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Location</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Services and Location content ends here -->
+            </div>
+            <div>
+                <!-- Showreels content starts here -->
+                <article id="showReelContent" class="pb-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="rounded-3 mb-3">
+                                <h3 class="h1 text-center py-3">Showreels</h3>
+                                <p class="text-center">A word from (Insert Names) - <strong>Our Managing Director</strong></p>
+                                <div>
+                                    <video preload="auto" controls poster="assets/videos/Pexels Videos 4644.webmhd.png">
+                                        <source src="assets/videos/Pexels Videos 4644.mp4" type="video/mp4">
+                                        <source src="assets/videos/Pexels Videos 4644.webmhd.webm" type="video/webm">
+                                        Your browser doesn't support HTML5 video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Showreels content ends here -->
+            </div>
+            <div>
+                <!-- Shambani in number content starts here -->
+                <article id="chartNumbers" class="pb-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="rounded-3 mb-3">
+                                <h3 class="h1 text-center py-3">Shambani in Numbers</h3>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div id="customerRatingPiechart3d" style="max-width: 100%; height: auto;"></div>
+                                        <p class="text-center">Customer Rating</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div id="staffDemographicsPiechart3d" style="max-width: 100%; height: auto;"></div>
+                                        <p class="text-center">Staff Demographics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Shambani in numbers content ends here -->
+            </div>
+            <div>
+                <!-- Our Team Members content starts here -->
+                <article id="ourTeamMembersContent" class="pb-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="rounded-3 mb-3">
+                                <h3 class="h1 text-center py-3">Our Team Members</h3>
+                                <div class="card-group">
+                                    <div class="card border-0" style="background-color: #FFF9E6;">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Full Names</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0" style="background-color: #FFF9E6;">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Full names</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card border-0" style="background-color: #FFF9E6;">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title text-center">Full Names</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Our team members content ends here -->
+            </div>
+            <div>
+                <!-- Our Projects and Activities Gallery content starts here -->
+                <article id="ourProjectsAndActivitiesGalleryContent" class="pb-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="rounded-3 mb-3">
+                                <h3 class="h1 text-center py-3">Our Projects and Activities Gallery</h3>
+                                <div class="card-group">
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-group">
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                    <div class="card border-0">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Our Projects and Activities Gallery content ends here -->
+            </div>
+            <div>
+                <!-- Customer testimonies slideshow Content starts here -->
+                <article id="testimoniesSlideshow">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <h4 class="text-center my-3 pb-3 h1">Testimonies</h4>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-12">
+                                    <div id="testimoniesCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <figure class="text-center p-3 rounded-3">
+                                                    <blockquote class="blockquote">
+                                                        <strong>"Excellent Service"</strong>
+                                                        <p>Their service is brilliant! I really hope some of them are now using your service..</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite title="Source Title">Mary</cite>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <figure class="text-center p-3 rounded-3">
+                                                    <blockquote class="blockquote">
+                                                        <strong>"Fantastic Quality"</strong>
+                                                        <p>I'm really appreciating the quality and presentation. The flavour of the veg is outstanding.</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite title="Source Title">John</cite>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <figure class="text-center p-3 rounded-3">
+                                                    <blockquote class="blockquote">
+                                                        <strong>"Appreciate the flexibility"</strong>
+                                                        <p>We are very happy with the box and we value that we can have the standard box or choose our own.</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite title="Source Title">Sarah</cite>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <figure class="text-center p-3 rounded-3">
+                                                    <blockquote class="blockquote">
+                                                        <strong>"Insightful and Informative Personnel"</strong>
+                                                        <p>Your staff were professional and welcoming from the moment we arrived and the guidance provided was enriching.</p>
+                                                    </blockquote>
+                                                    <figcaption class="blockquote-footer">
+                                                        <cite title="Source Title">Peter</cite>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- customer testimonies slideshow content ends here -->
+            </div>
+            <div>
+                <!-- Our Vision content starts here -->
+                <article id="ourVision">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="py-3">
+                                <h5 class="h1 text-center">Our Vision</h5>
+                                <p class="text-center">To be Your First Choice when in matters food and poultry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Our Vision Content ends here -->
+            </div>
+            <div>
+                <!-- Customer Services content starts here -->
+                <article id="ourServices">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="py-3">
+                                <h6 class="h1 text-center">Our Services</h6>
+                                <p class="text-center">We have a dedicated team that ensures we deliver the best quality product to our valued customers. Shambani is Halaal certified and pre-certified by the bureau of standards. Our products can be accessed either at the farm for both dressed and live chickens or our two other outlet shops. The first shop situated along (building) and the second shop situated at Shop Number (building)</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Customer Services Content ends here -->
+            </div>
+            <div>
+                <!-- Get in touch form content starts here -->
+                <article id="contactUsFormContent" class="my-3 pt-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-5 offset-xl-1 offset-lg-1">
+                            <article id="contactUsForm" class="my-3">
+                                <h3 class="h1 mb-3">Get in Touch</h3>
+                                <form class="row needs-validation my-3" name="contactusform" method="POST" data-netlify="true" autocomplete="on" novalidate>
+                                    <fieldset>
+                                        <legend>Contact Form</legend>
+                                        <div class="row g-3 mb-3">
+                                            <div class="col">
+                                                <div class="form-floating">
+                                                    <input id="floatingInputNames" type="text" name="names" class="form-control is-invalid" placeholder="First and Last name" value="First and Last Name">
+                                                    <label for="floatingInputNames" class="form-label">Your Names:(REQUIRED)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input id="inputEmail" type="email" name="email" class="form-control is-invalid" placeholder="Enter valid email" value="Valid email please">
+                                            <label for="inputEmail" class="form-label">Your Email address:(REQUIRED)</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" name="message" placeholder="Please keep your message or comment concise" id="floatingTextareaMessageOrComment" maxlength="550" rows="4"></textarea>
+                                            <label for="floatingTextareaMessageOrComment">Message or comment:</label>
+                                        </div>
+                                    </fieldset>
+                                    <br>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit" value="Submit">Submit form</button>
+                                    </div>
+                                </form> 
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 offset-xl-1">
+                            <aside>
+                                <h2>Contact Information</h2>
+                                <p>The farm is located in the (region name) agricultural area, just nine Kilometers from (insert city) Central Business District (CBD).</p>
+                                <p>The farm operates two outlet shops. One along (road name) Road (building location) and the second shop situated at Shop Number (number) (building location)</p>
+                                <div class="row g-0 position-relative my-3">
+                                    <strong>P.O Box:</strong>
+                                    <p>12345 Location, Country</p>
+                                    <strong>Telephone/Mobile:</strong>
+                                    <p>0712345678</p>
+                                    <strong>Email:</strong>
+                                    <p>name@emailserviceprovider.com</p>           
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </article>
+                <!-- Get in touch form content ends here -->
+            </div>
+        </main>
+        <!-- Main content ends here -->
+        <div>
+            <!-- Footer content starts here -->
+            <footer id="footerContent">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="d-flex justify-content-center">
+                            <p class="px-2 py-3">
+                                Follow us on
+                                <a class="facebook" target="_blank" rel="noreferrer" href="https://www.facebook.com">
+                                    <strong>Facebook</strong>
+                                </a>
+                                and 
+                                <a class="twitter" target="_blank" rel="noreferrer" href="https://www.twitter.com">
+                                    <strong>Twitter</strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer content ends here -->
+        </div>
+        <div>
+            <!-- breadcrumb nav content starts here -->
+            <div id="footerNavigation" class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#aboutUsContent">About</a></li>
+                        <li class="breadcrumb-item"><a href="#showReelContent">Showreels</a></li>
+                        <li class="breadcrumb-item"><a href="#ourTeamMembersContent">Team</a></li>
+                        <li class="breadcrumb-item"><a href="#ourProjectsAndActivitiesGalleryContent">Gallery</a></li>
+                        <li class="breadcrumb-item"><a href="#contactUsFormContent">Contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- breadcrumb nav content ends here -->
+            <!-- copyright content starts here -->
+            <div id="copyrightContent" class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="text-center py-4">
+                        <small>© Copyright 2020 Shambani<br><em>All rights Reserved</em></small>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright content ends here -->
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    </div>
+    <!-- Contact page content ends here -->
+</body>
+</html>
