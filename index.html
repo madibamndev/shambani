@@ -16,7 +16,9 @@
     <!--Fonteawesome 4.7 CDN -->
     <link rel="preconnect stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- AOS CSS CDN -->
+    <link rel="preconnect stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Title content -->
     <title>Shambani</title>
     <!-- styles.css -->
@@ -114,6 +116,7 @@
         </nav>
         <!-- Nav content ends here -->
         <!-- Products and Projects slideshow Content starts here -->
+        <div data-aos="fade-zoom-in" data-aos-easing="linear" data-aos-duration="3000">
             <aside id="projectsAndProductsSlideshow">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -142,10 +145,12 @@
                     </div>
                 </div>
             </aside>
+        </div>
         <!-- Products and Projects slideshow content ends here -->
         <div>
         <!-- Header content starts here -->
-        <header id="homeContent">
+        <div>
+        <header id="homeContent" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="py-3 position-relative">
@@ -163,13 +168,14 @@
                 </div>
             </div>
         </header>
+        </div>
         <!-- Header content ends here -->
         </div>
         <!-- Main content starts here -->
         <main>
             <div>
                 <!-- Our Core Values content starts here -->
-                <article id="ourCoreValues" class="pb-3">
+                <article id="ourCoreValues" class="pb-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
@@ -200,7 +206,7 @@
             </div>
             <div>
                 <!-- About Us content starts here -->
-                <article id="aboutUsContent" class="pb-3">
+                <article id="aboutUsContent" class="pb-3" data-aos="fade-up-right" data-aos-easing="ease-in-sine" data-aos-duration="3000">
                     <div class="">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
@@ -223,7 +229,7 @@
                 <article id="servicesAndLocationInfo" class="pb-3">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <div class="rounded-3 mb-3">
+                            <div class="rounded-3 mb-3" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="3000">
                                 <h4 class="h1 text-center py-3">Services</h4>
                                 <div class="card border-0 mb-3" style="background-color: #BAFFAD;">
                                     <div class="row g-0">
@@ -241,7 +247,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <div class="rounded-3 mb-3">
+                            <div class="rounded-3 mb-3" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="3000">
                                 <h4 class="h1 text-center py-3">Location</h4>
                                 <div class="card border-0 mb-3" style="background-color: #BAFFAD;">
                                     <div class="row g-0">
@@ -264,7 +270,7 @@
             </div>
             <div>
                 <!-- Showreels content starts here -->
-                <article id="showReelContent" class="pb-3">
+                <article id="showReelContent" class="pb-3" data-aos="fade-down-right" data-aos-easing="ease-in-sine" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
@@ -285,7 +291,7 @@
             </div>
             <div>
                 <!-- Shambani in number content starts here -->
-                <article id="chartNumbers" class="pb-3">
+                <article id="chartNumbers" class="pb-3" data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
@@ -308,26 +314,26 @@
             </div>
             <div>
                 <!-- Our Team Members content starts here -->
-                <article id="ourTeamMembersContent" class="pb-3">
+                <article id="ourTeamMembersContent" class="pb-3" data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="rounded-3 mb-3">
                                 <h3 class="h1 text-center py-3">Our Team Members</h3>
                                 <div class="card-group">
                                     <div class="card border-0" style="background-color: #FFF9E6;">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="..." data-aos="zoom-out" data-aos-duration="3000">
                                         <div class="card-body">
                                         <h5 class="card-title text-center">Full Names</h5>
                                         </div>
                                     </div>
                                     <div class="card border-0" style="background-color: #FFF9E6;">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="..." data-aos="zoom-out-up" data-aos-duration="3000">
                                         <div class="card-body">
                                         <h5 class="card-title text-center">Full names</h5>
                                         </div>
                                     </div>
                                     <div class="card border-0" style="background-color: #FFF9E6;">
-                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="...">
+                                        <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top" alt="..." data-aos="zoom-out-down" data-aos-duration="3000">
                                         <div class="card-body">
                                         <h5 class="card-title text-center">Full Names</h5>
                                         </div>
@@ -349,7 +355,7 @@
                                 <div class="card-group">
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image1Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -359,7 +365,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -367,7 +373,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image2Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -377,7 +383,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -385,7 +391,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image3Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -395,7 +401,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -403,7 +409,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image4Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -413,7 +419,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -421,7 +427,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image5Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image5Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -431,7 +437,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -441,7 +447,7 @@
                                 <div class="card-group">
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image6Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -451,7 +457,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -459,7 +465,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image7Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image7Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -469,7 +475,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -477,7 +483,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image8Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image8Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -487,7 +493,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -495,7 +501,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image9Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image9Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -505,7 +511,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -515,7 +521,7 @@
                                 <div class="card-group">
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image10Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image10Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -525,7 +531,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -533,7 +539,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image11Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image11Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -543,7 +549,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -551,7 +557,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image12Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image12Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -561,7 +567,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -571,7 +577,7 @@
                                 <div class="card-group">
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image13Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image13Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -581,7 +587,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-up" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -589,7 +595,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image14Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image14Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -599,7 +605,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -607,7 +613,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image15Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image15Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -617,7 +623,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -625,7 +631,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image16Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image16Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -635,7 +641,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -645,7 +651,7 @@
                                 <div class="card-group">
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image17Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image17Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -655,7 +661,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -663,7 +669,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image18Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image18Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -673,7 +679,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -681,7 +687,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image19Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image19Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -691,7 +697,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -699,7 +705,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image20Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image20Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -709,7 +715,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -717,7 +723,7 @@
                                     </div>
                                     <div class="col">
                                         <a data-bs-toggle="modal" data-bs-target="#image21Modal">
-                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="...">
+                                            <img src="assets/images/shambani-image-placeholder.svg" class="card-img-top gallery-img" alt="..." data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                         </a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="image21Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -727,7 +733,7 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: tomato;"></button>
                                                 </div>
                                                 <div class="modal-body border-0">
-                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="...">
+                                                    <img src="assets/images/shambani-image-placeholder.svg" style="width: 100%;" alt="..." data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                                                 </div>
                                                 </div>
                                             </div>
@@ -742,7 +748,7 @@
             </div>
             <div>
                 <!-- Customer testimonies slideshow Content starts here -->
-                <article id="testimoniesSlideshow">
+                <article id="testimoniesSlideshow" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <h4 class="text-center my-3 pb-3 h1">Testimonies</h4>
@@ -805,12 +811,12 @@
             </div>
             <div>
                 <!-- Our Vision content starts here -->
-                <article id="ourVision">
+                <article id="ourVision" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="py-3">
                                 <h5 class="h1 text-center">Our Vision</h5>
-                                <p class="text-center">To be Your First Choice when in matters food and poultry.</p>
+                                <p class="text-center py">To be Your First Choice when in matters food and poultry.</p>
                             </div>
                         </div>
                     </div>
@@ -819,7 +825,7 @@
             </div>
             <div>
                 <!-- Customer Services content starts here -->
-                <article id="ourServices">
+                <article id="ourServices" data-aos="flip-down" data-aos-easing="linear" data-aos-duration="3000">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <div class="py-3">
@@ -836,7 +842,7 @@
                 <article id="contactUsFormContent" class="my-3 pt-3">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-5 offset-xl-1 offset-lg-1">
-                            <article id="contactUsForm" class="my-3">
+                            <article id="contactUsForm" class="my-3" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="3000">
                                 <h3 class="h1 mb-3">Get in Touch</h3>
                                 <form class="row needs-validation my-3" name="contactusform" method="POST" data-netlify="true" autocomplete="on" novalidate>
                                     <fieldset>
@@ -866,7 +872,7 @@
                             </article>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-5 offset-xl-1">
-                            <aside>
+                            <aside data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="3000">
                                 <h2>Contact Information</h2>
                                 <p>The farm is located in the (region name) agricultural area, just nine Kilometers from (insert city) Central Business District (CBD).</p>
                                 <p>The farm operates two outlet shops. One along (road name) Road (building location) and the second shop situated at Shop Number (number) (building location)</p>
@@ -888,7 +894,7 @@
         <!-- Main content ends here -->
         <div>
             <!-- Footer content starts here -->
-            <footer id="footerContent">
+            <footer id="footerContent" data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="3000">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="d-flex justify-content-center">
@@ -910,7 +916,7 @@
         </div>
         <div>
             <!-- breadcrumb nav content starts here -->
-            <div id="footerNavigation" class="row">
+            <div id="footerNavigation" class="row" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="3000">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="#projectsAndProductsSlideshow">Home</a></li>
@@ -935,7 +941,10 @@
         </div>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    
+        <!-- AOS animale on scroll javascript cdn -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- AOS initialize -->
+        <script>AOS.init();</script>
     </div>
     <!-- Contact page content ends here -->
 </body>
